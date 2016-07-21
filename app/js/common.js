@@ -1,6 +1,10 @@
 $(function() {
 
 	$(".top-line .sf-menu").superfish();
+	$(".slider").owlCarousel({
+		loop: true,
+		items: 1
+	});
 
 	//SVG Fallback
 	if(!Modernizr.svg) {

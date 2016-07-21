@@ -1,5 +1,6 @@
 @import "bourbon"
 @import "vars.sass"
+@import "app/libs/owl.carousel/dist/assets/owl.carousel.min"
 
 body
 	font-size: 16px
@@ -140,17 +141,19 @@ a
 			text-transform: uppercase
 
 .slider
+	position: absolute
+	z-index: -1
+	top: 0 
+	width: 100%
 	&__item
-		position: absolute
-		z-index: -1
-		top: 0 
+		position: relative
 		color: white
 		padding-top: 300px
 		padding-bottom: 50px
-		width: 100%
 	&__item-bg
 		position: absolute
-		z-index: -1000
+		background-size: cover
+		z-index: -1
 		top: 0
 		bottom: 0
 		right: 0
