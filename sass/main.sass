@@ -1,0 +1,66 @@
+@import "bourbon"
+@import "vars.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body nput:focus:required:invalid,
+body extarea:focus:required:invalid
+	colr: #667
+body nput:required:valid,
+body extarea:required:valid
+	colr: #666
+
+//Custom Styles Here
+.container
+	margin: auto
+
+.btn
+	display: inline-block
+	background-color: $accent-color
+	font-family: RobotoCondensedBold, sans-serif
+	font-size: 15px
+	text-align: center
+	padding: 10px 30px
+	border-radius: 3px
+	color: #222
+	text-transform: uppercase
+	border-bottom: 2px solid darken($accent-color, 20%)
+	transition-duration: .1s
+	border-bottom: 2px solid darken($accent-color, 20%)
+	&--small
+		font-size: 14px
+		padding: 6px 25px
+	&:hover
+		text-decoration: none
+		color: #222
+		background-color: lighten($accent-color, 15%)
+		border-bottom: 2px solid darken($accent-color, 30%)
+	&:active
+		background-color: $accent-color
+		border-bottom: 2px solid darken($accent-color, 20%)
+	&:focus
+		text-decoration: none
+		color: #222
+		
+		//ALWAYS END
+@import "media"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+@import "app/libs/superfish/dist/css/superfish"
+@import "app/libs/font-awesome/scss/font-awesome"
+

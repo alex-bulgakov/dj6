@@ -1,0 +1,184 @@
+@import "bourbon"
+@import "vars.sass"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.5
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+	color: $base-color
+	// background-color: $main-color 
+
+.hidden
+	display: none
+
+strong, b 
+	font-family: "RobotoBold", sans-serif
+	font-weight: normal
+
+h1, h2, h3, h4, h5, h6, .button
+	font-family: "RobotoCondensedBold", sans-serif
+	font-weight: normal
+	text-transform: uppercase
+
+a
+	outline: none!important
+.main-head
+	&__top-line
+		background-color: $main-color
+		border-bottom: 1px solid lighten($main-color, 10%)
+		text-align: center
+		position: relative
+		z-index: 1
+		a
+			color: white
+		ul, li
+			list-style-type: none
+			padding: 0
+			margin: 0
+			background-color: none 
+		.sf-menu
+			margin: 0 auto -5px
+			float: none
+			display: inline-block
+			font-family: RobotoCondensedRegular, sans-serif
+			font-size: em(15px)
+			ul
+				background-color: $main-color
+				>li
+					border-bottom: lighten($main-color, 10%) 1px solid
+					text-align: left
+					a
+						padding: 12px 25px 12px
+
+			li
+				background-color: transparent 
+				&:hover 
+					background-color: darken($main-color, 5%) 
+					> a
+						color: $accent-color
+
+				a
+					color: white
+					border: none
+					padding: 22px 28px 20px
+					.fa::before
+						font-size: 11px
+						margin-left: 2px
+		> li
+				display: inline-block
+				vertical-align: top
+// TOP PANEL				
+.main-head__top-pannel
+	background-color: rgba(lighten($main-color, 2%), .8)
+	color: white
+	padding: 50px 0
+	box-shadow: 0 10px 0 0 rgba(255, 255, 255, .03) 
+	&-content
+		position: relative
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		background-image: url("../img/top-pannel-bg.jpg")
+		opacity: .16
+		filter: blur(3px)
+	&-box
+
+
+.main-head__logo
+	img
+		max-width: 100%
+	position: relative	
+	top: 5px
+
+.top-pannel-block
+	p
+		display: inline-block
+		padding: 0 10px 0 22px
+		opacity: .35
+		font-size: em(13px)
+		position: relative
+	h4
+		margin: 0
+		border-bottom: 1px solid rgba($accent-color, .4)
+		padding-bottom: 10px
+		font-family: RobotoCondensedRegular, sans-serif
+		font-size: em(15px)
+
+	.fa
+		position: absolute
+		top: 6px
+		left: 0
+		font-size: 16px
+
+.top-pannel-contact
+	font-size: em(20px)
+	color: white
+	text-align: right
+	.fa
+		margin-right: 5px
+	&__phone 
+		font-family: RobotoCondensedRegular, sans-serif
+		span
+			opacity: 0.3
+			font-size: em(12px)
+	&__email 
+		font-size: em(12px)
+		margin-bottom: 15px
+		a
+			color: white
+			text-decoration: underline
+		span
+			opacity: 0.3
+			font-size: em(14px)
+			text-transform: uppercase
+
+.slider
+	&__item
+		position: absolute
+		z-index: -1
+		top: 0 
+		color: white
+		padding-top: 300px
+		padding-bottom: 50px
+		width: 100%
+	&__item-bg
+		position: absolute
+		z-index: -1000
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		&::before
+			content: ""
+			position: absolute
+			background-color: $main-color
+			top: 0
+			left: 0
+			width: 100%
+			height: 100% 
+			opacity: .85
+	&__content
+		position: relative
+		padding-top: 80px
+	&__img-wrap
+		max-width: 100%
+		padding-top: 12px
+	h2
+		font-family: RobotoCondensedLight, sans-serif
+		font-size: em(48px)
+		margin-top: 0
+		margin-bottom: 20px
+		line-height: em(19px)
+		&:first-line
+			color: $accent-color
+	p
+		font-family: RobotoLight, sans-serif
+		opacity: .75
+		margin-bottom: 40px
