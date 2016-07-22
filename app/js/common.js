@@ -1,10 +1,25 @@
 $(function() {
 
 	$(".top-line .sf-menu").superfish();
-	$(".slider").owlCarousel({
+
+	var owl = $(".slider");
+
+	owl.owlCarousel({
 		loop: true,
-		items: 1
+		items: 1,
+		nav: true,
+		navContainer: ".slider__item .container",
+		navText: [
+			'<i class="fa fa-chevron-left" aria-hidden="true"></i>',
+			'<i class="fa fa-chevron-right" aria-hidden="true"></i>'
+		]
 	});
+
+	var prev = $(".owl-prev");
+	var next = $(".owl-next");
+	prev.addClass("col-md-1");
+	next.addClass("col-md-1");
+
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
