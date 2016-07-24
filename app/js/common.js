@@ -20,6 +20,10 @@ $(function() {
 	prev.addClass("col-md-1");
 	next.addClass("col-md-1");
 
+	$(".main-head__mobile-menu").click(function () {
+	   			$(".burger-menu").toggleClass("menu-on");
+	});
+
 
 	//SVG Fallback
 	if(!Modernizr.svg) {

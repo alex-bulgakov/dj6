@@ -17,6 +17,8 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	.slider__item
+		padding-top: 100px
 	.slider__img-wrap
 		display: none
 	.slider__content
@@ -34,6 +36,14 @@
 			margin-bottom: 15px
 		&__email
 			display: none
+	.slider-nav
+		.fa
+			top: 160px
+
+	.main-head__mobile-menu
+		display: block
+		background-color: $accent-color
+		cursor: pointer
 
 
 /* Small Devices, Tablets */
@@ -63,7 +73,8 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-
+	.slider__item
+		padding-top: 180px
 	.main-head__top-pannel
 		div
 			width: 100%
@@ -71,6 +82,11 @@
 			font-size: em(17px)
 			margin: auto
 			float: none !important
+	.owl-dots
+		top: -35px
+	.slider__item
+		h2
+			font-size: em(19px)
 
 
 /* Custom, iPhone Retina */
