@@ -21,9 +21,32 @@ $(function() {
 	next.addClass("col-md-1");
 
 	$(".main-head__mobile-menu").click(function () {
-	   			$(".burger-menu").toggleClass("menu-on");
+		$(".burger-menu").toggleClass("menu-on");
 	});
 
+$(function () {
+	$("#menu").slicknav({
+		label: "",
+		prependTo: ".main-head__top-line"
+	});
+});
+/*
+var tgl = true;
+$(".main-head__mobile-menu").click( function () {
+	$(".main-head__top-line .container").attr("id", "my-menu");
+	$("#my-menu").mmenu({
+	});
+	var mmenuAPI = $("#my-menu").data("mmenu");
+	if( tgl ) {
+		mmenuAPI.open();
+		tgl = false;
+	}
+	else {
+		mmenuAPI.close();
+		tgl = true;
+	}
+	$(".burger-menu").toggleClass("menu-on");
+});*/
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
