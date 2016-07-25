@@ -26,7 +26,7 @@ $(function() {
 
 $(function () {
 	$("#menu").slicknav({
-		label: "",
+		label: "Меню",
 		prependTo: ".main-head__top-line"
 	});
 });
