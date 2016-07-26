@@ -322,3 +322,35 @@ a
 	&_nav
 		a
 			color: $main-color !important
+
+
+.teaser
+	&__item
+		display: table-row
+		div
+			display: table-cell
+	background-color: $main-color
+	margin-top: -25px
+	padding: 25px 0;
+	color: white
+	&__text
+		opacity: 0.28
+		padding-left: 15px
+		font-family: "RobotoCondensedLight", sans-serif
+	&__rang
+		position: relative
+		width: 43px
+		height: 43px
+		.fa
+			position: absolute
+			color: lighten($main-color, 10%)
+			font-size: 48px
+		span
+			position: absolute
+			color: $accent-color
+			font-size: 22px
+			text-align: center
+			width: 100%
+			top: 20%
+			font-family: "RobotoCondensedBold", sans-serif
+
