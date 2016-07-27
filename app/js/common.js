@@ -1,6 +1,9 @@
 $(function() {
-
-	$(".top-line .sf-menu").superfish();
+	var $sfMenu = $("ul.sf-menu");
+	$sfMenu.superfish({
+		cssArrows: false,
+		popUpSelector: "ul"
+	});
 
 	var owl = $(".slider");
 
