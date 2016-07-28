@@ -40,7 +40,7 @@ body extarea:required:valid
 	text-transform: uppercase
 	border-bottom: 2px solid darken($accent-color, 20%)
 	transition-duration: .1s
-	border-bottom: 2px solid darken($accent-color, 20%)
+	border-bottom: 4px solid darken($accent-color, 20%)
 	&--small
 		font-size: 14px
 		padding: 6px 25px
@@ -48,7 +48,7 @@ body extarea:required:valid
 		text-decoration: none
 		color: #222
 		background-color: lighten($accent-color, 15%)
-		border-bottom: 2px solid darken($accent-color, 30%)
+		border-bottom-color:  darken($accent-color, 30%)
 	&:active
 		background-color: $accent-color
 		border-bottom: 2px solid darken($accent-color, 20%)
@@ -56,6 +56,82 @@ body extarea:required:valid
 		text-decoration: none
 		color: #222
 		
+.services
+	background-color: #efefef 
+	&__stars
+		color: #b4b4b4
+		font-size: 11px
+		margin-bottom: 10px
+		margin-top: 90px
+		.fa
+			transition-duration: .15s
+	&__item
+		position: relative
+		transition: border-color 0.15s
+		text-align: center
+		background-color: white
+		transition: .15s ease 
+		h4
+			position: absolute
+			width: 100%
+			font-size: 19px
+			margin-bottom: 15px
+		&:hover 
+			border-color: $accent-color
+			transform: scale(1.05)
+			box-shadow: 0 0 15px 5px rgba(100, 100, 100, .5)
+			z-index: 1000
+			.services__stars
+				color: $accent-color
+				.fa
+					margin: 0 2px
+			.services__img
+				cursor: pointer
+				&::before, .fa
+					opacity: .7 
+		border: 5px solid lighten($main-color, 10%)
+		padding: 0
+
+
+	&__price
+		font-size: em(17px)
+		font-family: RobotoBold, sans-serif
+		margin-bottom: 30px
+		.fa
+			color: $accent-color
+			font-size: 18px
+
+		span
+			font-size: em(28px)
+
+	&__img
+		min-height: 192px
+		background-size: cover
+		position: relative
+		.fa
+			position: absolute
+			top: 50%
+			left: 50%
+			margin-top: -15px
+			margin-left: -15px
+			font-size: 30px
+			color: white
+			opacity: 0
+			transition-duration: 0.15s
+		&::before
+			position: absolute
+			content: ''
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			background-color: $main-color
+			opacity: 0
+			transition-duration: 0.15s
+	.btn
+		margin-bottom: 25px
+		padding-left: 55px
+		padding-right: 55px
 
 
 @import "media"
