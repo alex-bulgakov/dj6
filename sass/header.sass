@@ -28,58 +28,50 @@ a
 	outline: none!important
 .main-head
 	&__top-line
-		background-color: $main-color
-		border-bottom: 1px solid lighten($main-color, 10%)
-		text-align: center
 		position: relative
-		z-index: 1
+		z-index: 5000
+		background-color: $main-color
+		text-align: center
 		a
 			color: white
 		ul, li
-			list-style-type: none
-			padding: 0
+			list-style: none
 			margin: 0
-			background-color: none 
+			padding: 0
 		.sf-menu
-			margin: 0 auto -5px
+			margin: auto
+			margin-bottom: -5px
 			float: none
 			display: inline-block
 			font-family: RobotoCondensedRegular, sans-serif
 			font-size: em(15px)
-			.active
-				background-color: darken($main-color, 5%) 
-				a
-					color: $accent-color
-			ul
-				background-color: $main-color
-				position: relative
-				ul
-					position: absolute
-				>li
-					border-bottom: lighten($main-color, 10%) 1px solid
-					text-align: left
-				a
-					padding: 12px 25px 12px
-
+			>li
+				display: inline-block
 			li
-				background-color: transparent 
-				&:hover 
-					background-color: darken($main-color, 5%) 
-					> a
+				background-color: $main-color
+				&:hover
+					background-color: darken($main-color, 7%)
+					a:hover
 						color: $accent-color
-
 				a
 					color: white
 					border: none
-					padding: 22px 28px 20px
-					.fa::before
-						font-size: 11px
-						margin-left: 2px
-		> li
-				display: inline-block
-				vertical-align: top
+					padding: 22px 25px
+				ul
+					a
+						padding: 10px 25px
+			.sfHover
+				background-color: $main-color
+
+			.active
+				background-color: darken($main-color, 7%)
+				a
+					color: $accent-color
+
+
  // TOP PANEL				
 .main-head__top-pannel
+	visibility: $hidden
 	position: absolute
 	width: 100%
 	z-index: 1000
@@ -152,6 +144,7 @@ a
 
 .slider
 	width: 100%
+	visibility: $hidden
 	&__item
 		position: relative
 		padding-top: 220px
