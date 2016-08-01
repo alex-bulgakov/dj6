@@ -14,7 +14,9 @@
 		p
 			font-size: em(15px)
 
-
+	.links
+		h2
+			font-size: 30px
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	.slider__item
@@ -38,7 +40,7 @@
 			display: none
 	.slider-nav
 		.fa
-			top: 160px
+			top: 400px
 
 	.main-head__mobile-menu
 		display: block
@@ -56,6 +58,20 @@
 	.teaser__item
 		span
 			margin-top: -10px
+
+	.news__head
+			text-align: center
+
+	.links
+		.col-sm-9>div
+			float: none
+			margin: auto
+			width: 50%
+		&__item
+			min-height: 100px
+
+
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -98,7 +114,11 @@
 				top: 8px 
 				margin-top: 0
 
-
+	.links
+		&__head
+			text-align: center
+		.col-sm-9>div
+			min-width: 270px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)

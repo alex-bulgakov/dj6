@@ -17,6 +17,9 @@ $(function() {
 		]
 	});
 
+$(".news__text").matchHeight();
+
+
 	var prev = $(".owl-prev");
 	var next = $(".owl-next");
 	prev.addClass("col-md-1");

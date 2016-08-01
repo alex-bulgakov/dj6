@@ -133,6 +133,86 @@ body extarea:required:valid
 		padding-left: 55px
 		padding-right: 55px
 
+.universal
+	background-color: #efefef
+	padding: 60px 0
+	position: relative
+	h2
+		margin-top: 20px
+		margin-bottom: 45px
+		font-size: em(42px)
+		line-height: 44px
+
+.news
+	background: url("../img/news-bg.jpg") no-repeat
+	background-size: cover 
+	color: white
+	&::before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba($main-color, 0.7)
+	&__item
+		position: relative
+		background-color: #efefef
+		padding: 1px
+		padding-bottom: 25px
+		color: black;
+		text-align: center
+		margin: 40px 0
+	&__img
+		display: block
+		min-height: 180px
+		background-size: cover
+	h4, p
+		padding: 0 20px
+	p
+		font-size: em(14px)
+		margin-bottom: 30px
+		margin-top: 0
+	h4
+		margin-bottom: 10px
+
+.links
+	&__item
+		display: block
+		text-decoration: underline
+		border: 5px solid $accent-color
+		padding: 10px
+		margin-bottom: 15px
+		background-color: #fff
+		a
+			color: black
+			&:hover
+				color: lighten($main-color, 50%)
+		h4
+			padding-left: 60px
+			padding-right: 30px
+			margin: 0
+			position: relative
+			&::before
+				content: ""
+				position: absolute
+				width: 50px
+				height: 50px
+				left: 0
+				top: 0
+				background: url("../img/flag.svg") no-repeat
+				background-size: 40px 40px
+				background-position: center  center
+	&__head
+		margin-bottom: 40px
+	.col-md-9
+		padding: 0
+
+.footer
+	color: white
+	background-color: #0e0b13
+	padding: 70px 0;
+
 
 @import "media"
 

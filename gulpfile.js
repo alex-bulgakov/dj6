@@ -37,7 +37,8 @@ gulp.task('scripts', function() {
 		'./app/libs/plugins-scroll/plugins-scroll.js',
 		'./app/libs/superfish/dist//js/superfish.min.js',
 		'./app/libs/owl.carousel/dist/owl.carousel.min.js',
-		'./app/libs/slicknav/dist/jquery.slicknav.min.js'
+		'./app/libs/slicknav/dist/jquery.slicknav.min.js',
+		'./app/libs/matchHeight/jquery.matchHeight-min.js'
 
 		// './app/libs/jQuery.mmenu/dist/js/jquery.mmenu.all.min.js',
 		])
