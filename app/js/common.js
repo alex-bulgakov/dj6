@@ -35,23 +35,22 @@ $(function () {
 		prependTo: ".main-head__top-line"
 	});
 });
-/*
-var tgl = true;
-$(".main-head__mobile-menu").click( function () {
-	$(".main-head__top-line .container").attr("id", "my-menu");
-	$("#my-menu").mmenu({
+
+$('.callback-popup').magnificPopup({
+		type: 'inline',
+
+		fixedContentPos: false,
+		fixedBgPos: true,
+
+		overflowY: 'auto',
+
+		closeBtnInside: true,
+		preloader: false,
+		
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in'
 	});
-	var mmenuAPI = $("#my-menu").data("mmenu");
-	if( tgl ) {
-		mmenuAPI.open();
-		tgl = false;
-	}
-	else {
-		mmenuAPI.close();
-		tgl = true;
-	}
-	$(".burger-menu").toggleClass("menu-on");
-});*/
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
@@ -62,7 +61,7 @@ $(".main-head__mobile-menu").click( function () {
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
+	$(".callback").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
