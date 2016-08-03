@@ -157,7 +157,11 @@
 										<a href="mailto:emailsender@gmail.com">emailsender@gmail.com</a>
 									</div>
 
-									<a href="#callback" class="btn btn--small callback-popup popup-with-zoom-anim">Заказать звонок</a>
+									<a href="#callback" 
+									class="btn btn--small callback-popup popup-with-zoom-anim"
+									date-form="top-form">
+										Заказать звонок
+									</a>
 								</div>
 							</div>
 						</div>
@@ -704,7 +708,11 @@
 										<a href="mailto:emailsender@gmail.com">emailsender@gmail.com</a>
 									</div>
 
-									<a href="#callback" class="btn btn--small callback-popup popup-with-zoom-anim">Заказать звонок</a>
+									<a href="#callback" 
+									class="btn btn--small callback-popup popup-with-zoom-anim" 
+									date-form="bottom form">
+										Заказать звонок
+									</a>
 						</div>
 					</div>
 
@@ -735,12 +743,14 @@
 
 				<label>
 					<span>Ваше телефон:</span>
-					<input type="text" name="phone" placeholder="Введите ваш телефон">
+					<input type="text" name="phone" placeholder="Введите ваш телефон" required>
 				</label>
 
 				<div class="text-center">
 					<button class="btn">Заказать</button>
 				</div>
+
+				<input class="form-name" type="hidden" name="form">
 			</form>
 
 		</div>

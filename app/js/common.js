@@ -48,10 +48,15 @@ $('.callback-popup').magnificPopup({
 		preloader: false,
 		
 		midClick: true,
-		removalDelay: 300,
-		mainClass: 'my-mfp-zoom-in'
+		removalDelay: 100,
+		mainClass: 'my-mfp-zoom-in',
+
+		focus: "input"
 	});
 
+$(".callback-popup").click(function () {
+	$("#callback .form-name").val($(this).data("form"))
+});
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
