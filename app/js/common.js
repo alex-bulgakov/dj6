@@ -55,7 +55,8 @@ $('.callback-popup').magnificPopup({
 	});
 
 $(".callback-popup").click(function () {
-	$("#callback .form-name").val($(this).data("form"))
+	$("#callback .form-name").val($(this).data("form"));
+	// console.log($(this).data("form"));
 });
 	//SVG Fallback
 	if(!Modernizr.svg) {
@@ -73,11 +74,13 @@ $(".callback-popup").click(function () {
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+				$(".success").addClass("visible");
 			setTimeout(function() {
 				// Done Functions
+				$.magnificPopup.close();
 				th.trigger("reset");
-			}, 1000);
+				$(".success").removeClass("visible");
+			}, 3000);
 		});
 		return false;
 	});
